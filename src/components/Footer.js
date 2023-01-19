@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Footer() {
-  const [click, setClick] = useState(false);
   return (
     <>
         <footer className='footer'>
             <div className='footer-container'>
                 <div className='footer-loc'>
-                    Lokalizacja
+                    Lokalizacja <br></br>
+                    Katowice
                 </div>
                 <div className='footer-menu'>
                     <Link to="/" className='oferta'>
@@ -29,6 +29,8 @@ function Footer() {
                 </div>
                 <div className='footer-call'>
                     Zadzwoń do nas 
+                </div>
+                <div className='footer-call-nr'>
                     123 123 123
                 </div>
                 <div className='sign'>
@@ -40,4 +42,4 @@ function Footer() {
   );
 }
 
-export default Navbar;
+export default Footer;

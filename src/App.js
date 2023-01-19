@@ -12,8 +12,6 @@ function App() {
           <Routes>
             <Route path='/' exact />
           </Routes>
-      </Router>
-      <Router>
         <Footer />
           <Routes>
             <Route path='/' exact />
