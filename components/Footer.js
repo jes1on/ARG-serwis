@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark } from '@fortawesome/fontawesome-svg-core';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-function Navbar() {
+function Footer() {
+  const [click, setClick] = useState(false);
   return (
     <>
-        <nav className='navbar'>
-            <div className='navbar-container'>
-                <Link to="/" className='navbar-logo'>
-                    ARGSerwis
-                </Link>
-
-                <div className='menu-container'>
+        <footer className='footer'>
+            <div className='footer-container'>
+                <div className='footer-loc'>
+                    Lokalizacja
+                </div>
+                <div className='footer-menu'>
                     <Link to="/" className='oferta'>
                         Oferta
                     </Link>
@@ -28,10 +25,17 @@ function Navbar() {
                     </Link>
                     <Link to="/" className='galeria'>
                         Galeria
-                    </Link>                      
+                    </Link>
+                </div>
+                <div className='footer-call'>
+                    Zadzwoń do nas 
+                    123 123 123
+                </div>
+                <div className='sign'>
+                    BL S.A.
                 </div>
             </div>
-        </nav>
+        </footer>
     </>
   );
 }
