@@ -1,4 +1,62 @@
-.Navbar {
-    background-color: orange;
-    color: black;
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container {
+    width: 100%;
+    min-height: 4vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    text-align: center;
+    text-decoration: none;
+    color: orange;
+    margin-left: 2rem;
+}
+
+.navbar-menu {
+    text-decoration: none;
+    display: flex;
+    padding: 0rem 2rem;
+}
+
+.oferta {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin: 0rem 2rem;
+}
+
+.geometria {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin: 0rem 2rem;
+}
+
+.klasyki {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin: 0rem 2rem;
+}
+
+.cennik {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin: 0rem 2rem;
+}
+
+.galeria {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin: 0rem 2rem 0rem 2rem;
 }

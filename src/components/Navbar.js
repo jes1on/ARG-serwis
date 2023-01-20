@@ -10,11 +10,12 @@ function Navbar() {
     <>
         <nav className='navbar'>
             <div className='navbar-container'>
-                <Link to="/" className='navbar-logo'>
-                    ARGSerwis
-                </Link>
-
-                <div className='menu-container'>
+                <div className='navbar-container-logo'>
+                    <Link to="/" className='navbar-logo'>
+                        ARGSerwis
+                    </Link>
+                </div>
+                <div className='navbar-menu'>
                     <Link to="/" className='oferta'>
                         Oferta
                     </Link>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Footer.css';
 
 function Footer() {
   return (
@@ -28,7 +29,7 @@ function Footer() {
                     </Link>
                 </div>
                 <div className='footer-call'>
-                    Zadzwoń do nas 
+                    <h1>Zadzwoń do nas</h1> 
                 </div>
                 <div className='footer-call-nr'>
                     123 123 123
