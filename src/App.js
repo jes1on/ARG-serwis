@@ -12,6 +12,10 @@ function App() {
           <Routes>
             <Route path='/' exact />
           </Routes>
+        <Footer />
+          <Routes>
+            <Route path='/' exact />
+          </Routes>
       </Router>
       <Router>
         <Footer />

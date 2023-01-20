@@ -1,0 +1,48 @@
+.footer {
+    width: 100%;
+    min-height: 10rem;
+    background-color: aqua;    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: table-row;
+}
+
+.oferta-f {
+    text-decoration: none;
+    color: black;
+    display: flex;
+
+}
+
+.geometria-f {
+    text-decoration: none;
+    color: black;
+    display: flex;
+
+}
+
+.klasyki-f {
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+.cennik-f {
+    text-decoration: none;
+    color: black;
+    display: flex;
+
+}
+
+.galeria-f {
+    text-decoration: none;
+    color: black;
+    display: flex;
+
+}
