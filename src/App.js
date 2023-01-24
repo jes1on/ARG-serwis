@@ -10,6 +10,11 @@ function App() {
         <Navbar />
           <Routes>
             <Route path='/' exact />
+            {/*<Route path='/' exact component={Oferta} />
+            <Route path='/' exact component={Geometria 3d}} />
+            <Route path='/' exact component={Klasyki} />
+            <Route path='/' exact component={Cennik} />
+            <Route path='/' exact component={Galeria} />*/}
           </Routes>
       </Router>
     </>
