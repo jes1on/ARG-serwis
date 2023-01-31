@@ -14,22 +14,22 @@ function Footer() {
                 </div>
                 <div className='footer-menu'>
                     <Link to="/" className='footer-link'>
-                        Oferta
+                        OFERTA
                     </Link>
                     <Link to="/" className='footer-link'>
-                        Geometria 3D
+                        GEOMETRIA 3D
                     </Link>
                     <Link to="/" className='footer-link'>
-                        Klasyki
+                        KLASYKI
                     </Link>
                     <Link to="/" className='footer-link'>
-                        Cennik
+                        CENNIK
                     </Link>
                     <Link to="/" className='footer-link'>
-                        Galeria
+                        GALERIA
                     </Link>
                     <Link to="/" className='footer-link'>
-                        Kontakt
+                        KONTAKT
                     </Link>
                 </div>
                 <div className='footer-call-container'>
