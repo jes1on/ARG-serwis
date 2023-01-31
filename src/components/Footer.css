@@ -1,22 +1,56 @@
 .footer {
     width: 100%;
-    min-height: 10rem;
-    background-color: aqua;    
+    height: 100%;
+    background-color: aqua;
+
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 10rem);
+    background-color: beige;
 }
 
-.footer-left {
-    display: table-row;
+.footer-loc {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: burlywood;
+    text-align: center;
+    align-self: center;
+}
+
+.footer-menu {
+    grid-column: 1;
+    grid-row: 2;
+    padding: auto;
+    align-self: auto;
+    justify-self: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: 2;
+    background-color:chocolate;
+}
+
+.footer-call-container {
+    grid-column: 2;
+    grid-row: 1/3;
+    background-color: cornsilk;
+    text-align: center;
+    align-self: center;
+}
+
+.footer-call-container h1 {
+    color: blue;
 }
 
 .oferta-f {
     text-decoration: none;
     color: black;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -24,6 +58,8 @@
     text-decoration: none;
     color: black;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -31,12 +67,16 @@
     text-decoration: none;
     color: black;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cennik-f {
     text-decoration: none;
     color: black;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -44,5 +84,12 @@
     text-decoration: none;
     color: black;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.sign {
+    background-color: azure;
+    text-align: right;
 }

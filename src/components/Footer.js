@@ -7,10 +7,11 @@ function Footer() {
     <>
         <footer className='footer'>
             <div className='footer-container'>
-                <div className='footer-left'>    
+                    
                     <div className='footer-loc'>
-                        Lokalizacja <br></br>
-                        Katowice
+                        <h2>Lokalizacja</h2>
+                        ul. G. Ziętka x/D<br></br>
+                        40-400 Katowice
                     </div>
                     <div className='footer-menu'>
                         <Link to="/" className='oferta-f'>
@@ -29,14 +30,11 @@ function Footer() {
                             Galeria
                         </Link>
                     </div>
-                </div>
+                
                 <div className='footer-call-container'>
-                    <div className='footer-call'>
                         <h1>Zadzwoń do nas</h1> 
-                    </div>
-                    <div className='footer-call-nr'>
+                    
                         123 123 123
-                    </div>
                 </div>
             </div>
                 <div className='sign'>
