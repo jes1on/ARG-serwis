@@ -7,10 +7,10 @@ function App() {
   return (
     <>  
       <Router>
+        <Routes>
+          <Route path='/' exact />
+        </Routes>
         <Footer />
-          <Routes>
-            <Route path='/' exact />
-          </Routes>
       </Router>
     </>
   );
