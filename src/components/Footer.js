@@ -4,8 +4,8 @@ import './Footer.css';
 
 export const Footer = () => (
     <>
-        <footer className='footer'>
-            <div className='footerContainer'>   
+        <footer className='footerContainer'>
+            <div className='footerContent'>   
                 <div className='footerLoc'>
                     <h2>Lokalizacja</h2>
                         ul. G. Ziętka x/D<br></br>
