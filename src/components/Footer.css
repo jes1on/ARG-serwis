@@ -1,7 +1,7 @@
 .footerContainer {
     font-size: 1rem;
-    background-color: #242222;
     color: white;
+    background-color: #242222;
 }
 
 .footerContent {
@@ -13,17 +13,18 @@
 .footerLoc {
     grid-column: 1;
     grid-row: 1;
-    text-align: center;
     align-self: center;
+    text-align: center;
 }
 
 .footerMenu {
+    display: grid;
+    
     grid-column: 1;
     grid-row: 2;
     align-self: auto;
     justify-self: auto;
-    
-    display: grid;
+
     grid-template-columns: repeat(3, auto);
     grid-auto-rows: 2;
     padding: 0.1rem;
@@ -40,20 +41,20 @@
 .footerCallContainer {
     grid-column: 2;
     grid-row: 1/3;
-    text-align: center;
     align-self: center;
+    text-align: center;
 }
 
 .footerLink {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     text-decoration: none;
 }
 
 .sign {
-    text-align: right;
     margin-right: 1rem;
     margin-top: -1rem;
     padding-bottom: 1rem;
+    text-align: right;
 }
