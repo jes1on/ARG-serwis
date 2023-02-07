@@ -1,3 +1,11 @@
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
 .container {
     background: url('../images/mercedes1.jpg') center center/cover no-repeat;
     width: 100%;
@@ -6,13 +14,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-}
-
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
+    color: orange;
 }
