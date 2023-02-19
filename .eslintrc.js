@@ -3,16 +3,19 @@ module.exports = {
         "browser": true,
         "es2021": true
     },
-    "extends": "plugin:react/recommended",
+    "extends": "eslint:recommended",
     "overrides": [
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        "parser": "babel-eslint"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
-    }
+    },
+    "parser": "react-scripts/node_modules/babel-eslint"
 }
