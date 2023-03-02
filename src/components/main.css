@@ -1,0 +1,120 @@
+.container {
+  /* background: url('../images/mercedes1.jpg') center center/cover no-repeat; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.leftColumn {
+  position: absolute;
+  left: 0;
+  z-index: -0.5;
+  width: 25%;
+  height: 100vh;
+  background-color: #242222;
+}
+
+img {
+  position: fixed;
+  left: 21%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.backgroundName {
+  display: flex;
+  justify-content: center;
+  margin-top: 60%;
+  font-size: 15rem;
+  color: #f8f9fa;
+  opacity: 0.4;
+  font-weight:200;
+  /* background-color: bisque; */
+}
+
+.textLeft {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-left: 12.5%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  /* background-color: burlywood; */
+}
+
+.text1 {
+  z-index: 0;
+  display: flex;
+  font-size: 5rem;
+  /* background-color: antiquewhite; */
+}
+
+.sentences {
+  position: absolute;
+  top: 75%;
+  right: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: 20%;
+  margin-right: 10%;
+  font-size: 1.2rem;
+  color: white;
+  /* background-color: burlywood; */
+}
+
+.text2 {
+  z-index: 0;
+  display: flex;
+  bottom: 0;
+  color: white;
+  /* background-color: gray; */
+}
+
+.text3 {
+  z-index: 0;
+  margin-top: 8%;
+  display: flex;
+  bottom: 0;
+  color: #dee2e6;
+  /* background-color: gray; */
+}
+
+.line {
+  position: absolute;
+  top: 73%;
+  z-index: -1;
+  width: 87.5%;
+  height: 0px;
+
+  border-top: 100px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 10px solid #6c757d;
+}
+
+.icons {
+  width: 50%;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  /* background-color: aqua; */
+}
+
+.icons ul{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.3rem;
+  list-style-type: none;
+}
+
+.icons ul li {
+  margin-right: auto;
+}

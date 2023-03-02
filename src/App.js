@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Main } from "./components/Main";
 import { Home } from "./pages/Home/Home.js";
 import { Footer } from "./components/Footer.js";
 import image1 from "./pages/images/mercedes1.jpg";
@@ -9,39 +10,34 @@ import image2 from "./pages/images/mercedes2.jpg";
 function App() {
   const images = [
     {
-      stages: [1],
-      src: image1,
+      src: image1, //0 Home
     },
     {
-      stages: [2],
-      src: image2,
+      src: image2, //1 Oferta
     },
   ];
-
-  // mainTitles = [
-  //   {
-  //     stages: [1, 2],
-  //     title: "Title 1",
-  //     slot: (
-  //       <div className="icons">
-
-  //       </div>
-  //     )
-  //   }
-  // ];
 
   const sentences = [
     {
-      stages: [1, 2],
-      top: "Top sentence",
-      bottom: "Bottom sentence",
+      title: "ARG", //0 Home
+      subTitle: "Text nr 1",
+      top: "Top sentence top sentence top sentence",
+      bottom: "Bottom sentence bottom senence bottom sentence",
     },
     {
-      stages: [3, 4],
-      top: "Top sentence1",
-      bottom: "Bottom sentence1",
+      title: "Oferta", //1 Oferta
+      subTitle: "Text nr 2",
+      top: "Top sentence 2",
+      bottom: "Bottom sentence 2",
     },
   ];
+
+  // const section1 = useRef();
+
+  // const scrollHandler = (elmRef) => {
+  //   console.log(elmRef.current);
+  //   window.scrollTo({ top: elmRef.current.offsetTop, behavior: 'smooth' });
+  // };
 
   return (
     <Router>
@@ -49,7 +45,9 @@ function App() {
         <Route
           path="/"
           element={
-            <Home
+            <Main
+              title={sentences[0].title}
+              subTitle={sentences[0].subTitle}
               src={images[0].src}
               top={sentences[0].top}
               bottom={sentences[0].bottom}
@@ -59,7 +57,9 @@ function App() {
         <Route
           path="/Oferta"
           element={
-            <Home
+            <Main
+              title={sentences[1].title}
+              subTitle={sentences[1].subTitle}
               src={images[1].src}
               top={sentences[1].top}
               bottom={sentences[1].bottom}
@@ -67,6 +67,7 @@ function App() {
           }
         />
       </Routes>
+      <Home />
       <Footer />
     </Router>
   );
