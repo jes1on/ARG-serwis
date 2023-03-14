@@ -1,10 +1,12 @@
 module.exports = {
     "env": {
         "browser": true,
+        "node": true,
         "es2021": true
     },
-    "extends": "eslint:recommended",
-    "overrides": [
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -12,10 +14,12 @@ module.exports = {
         "parser": "babel-eslint"
     },
     "plugins": [
-        "react",
-        "prettier"
+        "react"
     ],
     "rules": {
+        "react/prop-types": "off",
+        "react/jsx-uses-react": "error",   
+        "react/jsx-uses-vars": "error" 
     },
-    "parser": "react-scripts/node_modules/babel-eslint"
+    
 }

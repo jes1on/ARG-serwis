@@ -1,16 +1,21 @@
 .arrowButton {
-  position: absolute;
+  position: fixed;
   top: 80%;
   left: 92.5%;
   z-index: 0;
 }
 
 .faAngleDown1 {
-    font-size: 30px;
+  padding: 15px;
+  font-size: 30px;
 }
 
-.button {
+.faAngleUp1 {
   padding: 15px;
+  font-size: 30px;
+}
+
+.buttonDown {
   border-style: solid;
   border-width: 3px;
   border-radius: 50%;
@@ -20,13 +25,32 @@
   cursor: pointer;
 }
 
-.button:hover {
-    padding: 15px;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 50%;
-    border-color: #141414;
-    background-color: #dee2e6;
-    color: #141414;
-    cursor: pointer;
-  }
+.buttonDown:hover {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  border-color: #141414;
+  background-color: #dee2e6;
+  color: #141414;
+  cursor: pointer;
+}
+
+.buttonUp {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonUp:hover {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  border-color: #141414;
+  background-color: #dee2e6;
+  color: #141414;
+  cursor: pointer;
+}

@@ -2,7 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
-export const Footer = () => (
+export const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      duration: 1000,
+    });
+  }
+  return (
   <footer className="footerContainer">
     <div className="footerContent">
       <div className="footerLoc">
@@ -11,22 +19,22 @@ export const Footer = () => (
         40-400 Katowice
       </div>
       <div className="footerMenu">
-        <Link to="/" className="footerLink">
+        <Link to="/oferta" className="footerLink" onClick={scrollToTop}>
           OFERTA
         </Link>
-        <Link to="/" className="footerLink">
+        <Link to="/geometria-3d" className="footerLink" onClick={scrollToTop}>
           GEOMETRIA 3D
         </Link>
-        <Link to="/" className="footerLink">
+        <Link to="/klasyki" className="footerLink" onClick={scrollToTop}>
           KLASYKI
         </Link>
-        <Link to="/" className="footerLink">
+        <Link to="/cennik" className="footerLink" onClick={scrollToTop}>
           CENNIK
         </Link>
-        <Link to="/" className="footerLink">
+        <Link to="/galeria" className="footerLink" onClick={scrollToTop}>
           GALERIA
         </Link>
-        <Link to="/" className="footerLink">
+        <Link to="/kontakt" className="footerLink" onClick={scrollToTop}>
           KONTAKT
         </Link>
       </div>
@@ -37,4 +45,4 @@ export const Footer = () => (
     </div>
     <div className="sign">BL S.A.</div>
   </footer>
-);
+)};
