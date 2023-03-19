@@ -7,14 +7,22 @@ export const ArrowButton = () => {
   const [showScrollDownButton, setShowScrollDownButton] = useState(true);
   const [showScrollUpButton, setShowScrollUpButton] = useState(false);
 
+  const [showDownButton, setShowDownButton] = useState(true);
+  const [showUpButton, setShowUpButton] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY < 1.1 * window.innerHeight) {
         setShowScrollDownButton(true);
         setShowScrollUpButton(false);
+        setShowDownButton(true);
+        setShowUpButton(false);
+
       } else {
         setShowScrollDownButton(false);
         setShowScrollUpButton(true);
+        setShowDownButton(false);
+        setShowUpButton(true);
       }
     });
   }, []);
@@ -35,7 +43,7 @@ export const ArrowButton = () => {
 
   return (
     <div className="arrowButton">
-      <button className="buttonDown">
+      {showDownButton && <button className="buttonDown">
         {showScrollDownButton && (
           <FontAwesomeIcon
             icon={faAngleDown}
@@ -43,8 +51,8 @@ export const ArrowButton = () => {
             onClick={scrollDown}
           />
         )}
-      </button>
-      <button className="buttonUp">
+      </button>}
+      {showUpButton && <button className="buttonUp">
         {showScrollUpButton && (
           <FontAwesomeIcon
             icon={faAngleUp}
@@ -52,7 +60,7 @@ export const ArrowButton = () => {
             onClick={scrollUp}
           />
         )}
-      </button>
+      </button>}
     </div>
   );
 };
