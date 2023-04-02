@@ -17,7 +17,6 @@ export const ArrowButton = () => {
         setShowScrollUpButton(false);
         setShowDownButton(true);
         setShowUpButton(false);
-
       } else {
         setShowScrollDownButton(false);
         setShowScrollUpButton(true);
@@ -27,14 +26,14 @@ export const ArrowButton = () => {
     });
   }, []);
 
-  //scroll w dol
+  //scroll down
   const scrollDown = () => {
     window.scrollBy({
       top: 100,
     });
   };
 
-  //scroll w gore
+  //scroll up
   const scrollUp = () => {
     window.scrollTo({
       top: innerHeight,

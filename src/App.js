@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer.js";
 import image1 from "./pages/images/mercedes1.jpg";
 import image2 from "./pages/images/mercedes2.jpg";
 import { ArrowButton } from "./components/Button";
+import { Gallery } from "./pages/Gallery/Galeria.js";
 
 function App() {
   const stageManager = [
@@ -80,7 +81,7 @@ function App() {
         <Route path="/geometria-3d" element={<Oferta />} />
         <Route path="/klasyki" element={<Oferta />} />
         <Route path="/cennik" element={<Oferta />} />
-        <Route path="/galeria" element={<Oferta />} />
+        <Route path="/galeria" element={<Gallery />} />
         <Route path="/kontakt" element={<Oferta />} />
       </Routes>
       <Footer />

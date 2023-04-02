@@ -5,13 +5,12 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export const Main = (props) => {
   const { title, subTitle, top, bottom, src } = props.data;
-
   return (
     <section className="container">
       <div className="leftColumn">
         <p className="backgroundName">{title}</p>
       </div>
-      <img src={src} />
+      <img className="backgroundImg" src={src} />
       <div className="textLeft">
         <p className="text1">{subTitle}</p>
         <div className="icons">
@@ -22,10 +21,7 @@ export const Main = (props) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  style={{ color: "white" }}
-                />
+                <FontAwesomeIcon icon={faFacebook} style={{ color: "white" }} />
               </a>
             </li>
             <li>

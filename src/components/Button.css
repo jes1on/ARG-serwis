@@ -2,17 +2,19 @@
   position: fixed;
   top: 80%;
   left: 92.5%;
-  z-index: 0;
+  z-index: 998;
 }
 
 .faAngleDown1 {
   padding: 15px;
   font-size: 30px;
+  z-index: 998;
 }
 
 .faAngleUp1 {
   padding: 15px;
   font-size: 30px;
+  z-index: 998;
 }
 
 .buttonDown {
@@ -23,6 +25,7 @@
   background-color: transparent;
   color: white;
   cursor: pointer;
+  z-index: 998;
 }
 
 .buttonDown:hover {
@@ -33,6 +36,7 @@
   background-color: #dee2e6;
   color: #141414;
   cursor: pointer;
+  z-index: 998;
 }
 
 .buttonUp {
@@ -43,6 +47,7 @@
   background-color: transparent;
   color: white;
   cursor: pointer;
+  z-index: 998;
 }
 
 .buttonUp:hover {
@@ -53,4 +58,5 @@
   background-color: #dee2e6;
   color: #141414;
   cursor: pointer;
+  z-index: 998;
 }
