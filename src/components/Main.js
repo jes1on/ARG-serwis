@@ -3,16 +3,15 @@ import "./Main.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-export const Main = (props) => {
-  const { title, subTitle, top, bottom, src } = props.data;
+export const Main = ({ data }) => {
   return (
     <section className="container">
       <div className="leftColumn">
-        <p className="backgroundName">{title}</p>
+        <p className="backgroundName">{data.title}</p>
       </div>
-      <img className="backgroundImg" src={src} />
+      <img className="backgroundImg" src={data.src} />
       <div className="textLeft">
-        <p className="text1">{subTitle}</p>
+        <p className="text1">{data.subTitle}</p>
         <div className="icons">
           <ul>
             <li>
@@ -40,12 +39,10 @@ export const Main = (props) => {
         </div>
       </div>
       <div className="sentences">
-        <p className="text2">{top}</p>
-        <p className="text3">{bottom}</p>
+        <p className="text2">{data.top}</p>
+        <p className="text3">{data.bottom}</p>
       </div>
       <div className="line"></div>
     </section>
   );
 };
-
-//rename test
