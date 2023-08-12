@@ -7,6 +7,7 @@ import { Oferta } from "./pages/Oferta/Oferta";
 import { Footer } from "./components/Footer.js";
 import { ArrowButton } from "./components/Button";
 import { Gallery } from "./pages/Gallery/Galeria.js";
+import { Contact } from "./pages/Contact/Contact.js";
 import { stageManagerContent } from "./components/Data";
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
         <Route path="/klasyki" element={<Oferta />} />
         <Route path="/cennik" element={<Oferta />} />
         <Route path="/galeria" element={<Gallery />} />
-        <Route path="/kontakt" element={<Oferta />} />
+        <Route path="/kontakt" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

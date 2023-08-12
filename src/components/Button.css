@@ -1,7 +1,7 @@
 .arrowButton {
   position: fixed;
   top: 80%;
-  left: 92.5%;
+  right: 3%;
   z-index: 998;
 }
 
