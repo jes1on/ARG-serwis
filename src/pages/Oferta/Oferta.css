@@ -25,11 +25,27 @@
 }
 
 .textOferta {
+  display: grid;
   margin: auto;
   padding: 1rem;
   width: 60%;
   height: 70%;
   background-color: #6c757d;
+
+  overflow: hidden;
+}
+
+.hiddenOferta {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.showOferta {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .p1 {

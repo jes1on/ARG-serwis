@@ -17,18 +17,14 @@
 }
 
 .textContact {
+  display: grid;
   text-align: center;
   margin: 1rem;
   margin-top: -15%;
   width: 100%;
   color: #f8f9fa;
-}
 
-iframe {
-  display: flex;
-  margin-left: -20%;
-  z-index: 1;
-  max-width: 75%;
+  overflow: hidden;
 }
 
 .contactTable {
@@ -38,6 +34,42 @@ iframe {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-bottom: 10%;
+
+  overflow: hidden;
+}
+
+h1 {
+  display: grid;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+iframe {
+  display: flex;
+  margin-left: -20%;
+  z-index: 1;
+  max-width: 75%;
+}
+
+
+
+.contactTable:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.contactTable:nth-child(3) {
+  transition-delay: 600ms;
 }
 
 .contactIcons {
@@ -55,7 +87,9 @@ iframe {
   margin-inline: 10%;
 }
 
-p {margin: 0.2rem;}
+p {
+  margin: 0.2rem;
+}
 
 .phoneTable {
   display: grid;
@@ -63,6 +97,12 @@ p {margin: 0.2rem;}
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
+  overflow: hidden;
+}
+
+.phoneTable:nth-child(2) {
+  transition-delay: 200ms;
 }
 
 .btnPhone {
@@ -99,6 +139,7 @@ p {margin: 0.2rem;}
   }
 
   .textContact {
+    display: grid;
     margin-top: 0%;
   }
 
@@ -119,15 +160,13 @@ p {margin: 0.2rem;}
     margin-bottom: 0%;
   }
 
-  .location, .time, .followUs {
+  .columnTable {
     margin-bottom: 1rem;
   }
 
-  .phone-1 {
-    margin-bottom: 1rem;
+  p {
+    margin: 0.2rem;
   }
-
-  p {margin: 0.2rem;}
 
   .contactIcons {
     font-size: 1.5rem;

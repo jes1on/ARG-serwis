@@ -7,8 +7,8 @@ export const stageManagerContent = [
     src: image1,
     title: "ARG", //0 Home
     subTitle: "Text nr 1",
-    top: "Top sentence top sentence top sentence",
-    bottom: "Bottom sentence bottom senence bottom sentence",
+    top: "Z pasji do motoryzacji, dbając o najmniejsze detale.",
+    bottom: "Jesteśmy dla Państwa od 15 lat. Dziękujemy za zaufanie.",
   },
   {
     id: 1,
