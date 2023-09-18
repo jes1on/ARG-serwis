@@ -45,8 +45,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/oferta" element={<Oferta />} />
-        <Route path="/geometria-3d" element={<Oferta />} />
-        <Route path="/klasyki" element={<Oferta />} />
+        <Route path="/geometria-3d" element={<Home />} />
+        <Route path="/klasyki" element={<Home />} />
         <Route path="/cennik" element={<PriceList />} />
         <Route path="/galeria" element={<Gallery />} />
         <Route path="/kontakt" element={<Contact />} />

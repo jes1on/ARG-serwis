@@ -1,20 +1,9 @@
 import React from "react";
 import "./Home.css";
+import useIntersectionObserver from "../../components/IntersectionObserver";
 
 export const Home = () => {
-  const observer2 = new IntersectionObserver((entries2) => {
-    entries2.forEach((entry2) => {
-      console.log(entry2);
-      if (entry2.isIntersecting) {
-        entry2.target.classList.add("showHome");
-      } else {
-        entry2.target.classList.remove("showHome");
-      }
-    });
-  });
-
-  const hiddenElementsHome = document.querySelectorAll(".hiddenHome");
-  hiddenElementsHome.forEach((el) => observer2.observe(el));
+  useIntersectionObserver("hiddenHome", "showHome");
 
   return(
     <section className="containerHome">

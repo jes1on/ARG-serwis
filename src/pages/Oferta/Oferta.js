@@ -1,21 +1,11 @@
 import React from "react";
 import "./Oferta.css";
 import image3 from "../images/mech1-ver.jpg";
+import useIntersectionObserver from "../../components/IntersectionObserver";
 
 export const Oferta = () => {
-  const observer1 = new IntersectionObserver((entries1) => {
-    entries1.forEach((entry1) => {
-      console.log(entry1);
-      if (entry1.isIntersecting) {
-        entry1.target.classList.add("showOferta");
-      } else {
-        entry1.target.classList.remove("showOferta");
-      }
-    });
-  });
-
-  const hiddenElementsOferta = document.querySelectorAll(".hiddenOferta");
-  hiddenElementsOferta.forEach((el) => observer1.observe(el));
+  useIntersectionObserver("hiddenOferta", "showOferta");
+  
   return (
     <section className="containerOferta">
       <div className="contentOferta">

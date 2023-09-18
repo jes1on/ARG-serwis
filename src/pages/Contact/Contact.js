@@ -10,21 +10,11 @@ import {
   faHashtag,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import useIntersectionObserver from "../../components/IntersectionObserver";
 
 export const Contact = () => {
-  const observer3 = new IntersectionObserver((entries3) => {
-    entries3.forEach((entry3) => {
-      console.log(entry3);
-      if (entry3.isIntersecting) {
-        entry3.target.classList.add("show");
-      } else {
-        entry3.target.classList.remove("show");
-      }
-    });
-  });
-
-  const hiddenElementsContact = document.querySelectorAll(".hidden");
-  hiddenElementsContact.forEach((el) => observer3.observe(el));
+  useIntersectionObserver("hidden", "show");
+  
   return (
     <section className="containerContact">
       <div className="contentContact">
