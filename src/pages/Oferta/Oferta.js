@@ -4,14 +4,14 @@ import image3 from "../images/mech1-ver.jpg";
 import useIntersectionObserver from "../../components/IntersectionObserver";
 
 export const Oferta = () => {
-  useIntersectionObserver("hiddenOferta", "showOferta");
+  useIntersectionObserver("hidden", "show");
   
   return (
     <section className="containerOferta">
       <div className="contentOferta">
         <img src={image3} className="photo" alt="Arg" />
         <div className="textOferta">
-          <section className="hiddenOferta">
+          <section className="hidden">
             <h1>OFERTA</h1>
             <p className="p1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent

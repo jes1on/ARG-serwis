@@ -3,7 +3,7 @@ import "./Home.css";
 import useIntersectionObserver from "../../components/IntersectionObserver";
 
 export const Home = () => {
-  useIntersectionObserver("hiddenHome", "showHome");
+  useIntersectionObserver("hidden", "show");
 
   return(
     <section className="containerHome">
@@ -12,7 +12,7 @@ export const Home = () => {
           <div className="photoPorsche"></div>
         </div>
         <section className="textHome">
-          <section className="hiddenHome">
+          <section className="hidden">
             <h1>ARG Serwis</h1>
             <p className="p1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent

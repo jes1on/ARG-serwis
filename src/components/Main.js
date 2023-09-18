@@ -4,6 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export const Main = ({ data }) => {
+  if (window.scrollY > window.innerHeight) {
+    setTimeout(function () {
+      window.scrollBy({
+        top: 100,
+      });
+    }, 750);
+  }
+
   return (
     <section className="container">
       <div className="leftColumn">

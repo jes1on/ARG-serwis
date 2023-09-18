@@ -36,19 +36,6 @@
   overflow: hidden;
 }
 
-.hiddenHome {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(100%);
-  transition: all 1s;
-}
-
-.showHome {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
 .p1 {
   color: white;
 }
