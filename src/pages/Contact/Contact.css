@@ -1,0 +1,249 @@
+.containerContact {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #242222;
+  scroll-snap-align: start;
+  font-size: 1.2rem;
+}
+
+.contentContact {
+  display: flex;
+  width: 75%;
+  height: 100%;
+  align-items: center;
+  margin-left: 25%;
+  background-color: #6c757d;
+}
+
+.textContact {
+  display: grid;
+  text-align: center;
+  margin: 1rem;
+  margin-top: -15%;
+  width: 100%;
+  color: #f8f9fa;
+
+  overflow: hidden;
+}
+
+.contactTable {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-bottom: 10%;
+
+  overflow: hidden;
+}
+
+h1 {
+  display: grid;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+iframe {
+  display: flex;
+  margin-left: -20%;
+  z-index: 1;
+  max-width: 75%;
+}
+
+
+
+.contactTable:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.contactTable:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.contactIcons {
+  font-size: 1.5rem;
+}
+
+.contactIcons ul {
+  display: flex;
+  padding: 0.3rem;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.contactIcons ul li {
+  margin-inline: 10%;
+}
+
+p {
+  margin: 0.2rem;
+}
+
+.phoneTable {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  overflow: hidden;
+}
+
+.phoneTable:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.btnPhone {
+  color: #f8f9fa;
+  background-color: #6c757d;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  border: none;
+}
+
+.btnPhone:hover {
+  color: #242222;
+  cursor: pointer;
+}
+
+.mapWindow-2 {
+  display: none;
+}
+
+.phoneText {
+  display: inline-block;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .containerContact {
+    display: flex;
+    width: 100%;
+  }
+
+  .contentContact {
+    display: flex;
+    width: 100%;
+  }
+
+  .textContact {
+    display: grid;
+    margin-top: 0%;
+  }
+
+  iframe {
+    display: flex;
+    margin-left: -20%;
+    z-index: 1;
+    max-width: 75%;
+    max-height: 100%;
+  }
+
+  .contactTable {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 0%;
+  }
+
+  .columnTable {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0.2rem;
+  }
+
+  .contactIcons {
+    font-size: 1.5rem;
+  }
+
+  .contactIcons ul {
+    display: flex;
+    padding: 0.3rem;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .contactIcons ul li {
+    margin-inline: 10%;
+  }
+
+  .phoneTable {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: -16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .containerContact {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .contentContact {
+    display: block;
+    margin-left: 0%;
+    overflow-y: scroll;
+  }
+
+  .textContact {
+    width: 100%;
+    margin: 0;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  .contactTable {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .contactIcons {
+    font-size: 1.5rem;
+  }
+
+  .contactIcons ul {
+    display: flex;
+    padding: 0.3rem;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .contactIcons ul li {
+    margin-inline: 10%;
+  }
+
+  .mapWindow-2 {
+    display: block;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    height: 50%;
+    margin-top: -84.4px;
+    margin-bottom: 10%;
+  }
+}

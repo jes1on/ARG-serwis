@@ -1,0 +1,101 @@
+.pageContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #242222;
+  scroll-snap-align: start;
+  color: #f8f9fa;
+}
+
+.contentCennik {
+  width: 100%;
+}
+
+.contentTitleCenter {
+  width: 100%;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.viewport {
+  margin: 0px 10px 0px 10px;
+}
+
+.priceTableGroups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 5px;
+}
+
+.sectionTitle {
+  border-bottom: 1px solid orange;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 5px;
+  border-collapse: collapse; 
+}
+
+.svgIcon {
+  width: 25px;
+}
+
+.sectionTitle span {
+  margin: 0.5rem;
+}
+
+.priceTableBlockItem h2 {
+  display: inline-flex;
+}
+
+.priceTable {
+  width: 100%;
+}
+
+th {
+  display: none;
+}
+
+.priceTable tr:not(:last-child) {
+  border-bottom: 1px solid gray;
+  padding-bottom: 3px;
+}
+
+tr td:first-child {
+  text-align: left;
+}
+
+td:not(:last-child) {
+  padding-top: 3px;
+  padding-bottom: 5px;
+}
+
+tr td:last-child {
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 991px) {
+  .pageContainer {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .priceTableGroups {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+  }
+}

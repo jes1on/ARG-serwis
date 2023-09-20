@@ -1,43 +1,48 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Footer.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
 
-export const Footer = () => (
-  <footer className='footerContainer'>
-      <div className='footerContent'>   
-          <div className='footerLoc'>
-              <h2>Lokalizacja</h2>
-                  ul. G. Ziętka x/D<br></br>
-                  40-400 Katowice
-          </div>
-          <div className='footerMenu'>
-              <Link to="/" className='footerLink'>
-                  OFERTA
-              </Link>
-              <Link to="/" className='footerLink'>
-                  GEOMETRIA 3D
-              </Link>
-              <Link to="/" className='footerLink'>
-                  KLASYKI
-              </Link>
-              <Link to="/" className='footerLink'>
-                  CENNIK
-              </Link>
-              <Link to="/" className='footerLink'>
-                  GALERIA
-              </Link>
-              <Link to="/" className='footerLink'>
-                  KONTAKT
-              </Link>
-          </div>
-          <div className='footerCallContainer'>
-                  <h1>Zadzwoń do nas</h1> 
-              
-                  123 123 123
-          </div>
+export const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      duration: 1000,
+    });
+  }
+  return (
+  <footer className="footerContainer">
+    <div className="footerContent">
+      <div className="footerLoc">
+        <h2>Lokalizacja</h2>
+        ul. G. Ziętka x/D<br></br>
+        40-400 Katowice
       </div>
-      <div className='sign'>
-          BL S.A.
+      <div className="footerMenu">
+        <Link to="/oferta" className="footerLink" onClick={scrollToTop}>
+          OFERTA
+        </Link>
+        <Link to="/geometria-3d" className="footerLink" onClick={scrollToTop}>
+          GEOMETRIA 3D
+        </Link>
+        <Link to="/klasyki" className="footerLink" onClick={scrollToTop}>
+          KLASYKI
+        </Link>
+        <Link to="/cennik" className="footerLink" onClick={scrollToTop}>
+          CENNIK
+        </Link>
+        <Link to="/galeria" className="footerLink" onClick={scrollToTop}>
+          GALERIA
+        </Link>
+        <Link to="/kontakt" className="footerLink" onClick={scrollToTop}>
+          KONTAKT
+        </Link>
       </div>
+      <div className="footerCallContainer">
+        <h1>Zadzwoń do nas</h1>
+        123 123 123
+      </div>
+    </div>
+    <div className="sign">BL S.A.</div>
   </footer>
-  );
+)};
