@@ -4,20 +4,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export const Main = ({ data }) => {
-  if (window.scrollY > window.innerHeight) {
+/*   if (window.scrollY > window.innerHeight) {
     setTimeout(function () {
       window.scrollBy({
         top: 100,
       });
     }, 750);
-  }
+  } */
 
   return (
     <section className="container">
       <div className="leftColumn">
         <p className="backgroundName">{data.title}</p>
       </div>
-      <img className="backgroundImg" src={data.src} />
+      <div className="backgroundImg" />
       <div className="textLeft">
         <p className="text1">{data.subTitle}</p>
         <div className="icons">

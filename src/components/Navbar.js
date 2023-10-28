@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faxmark } from "@fortawesome/fontawesome-svg-core";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -26,14 +25,14 @@ function Navbar() {
     <>
       <nav className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
-          <Link to="/home" className="navbar-logo" onClick={handleClick}>
+          <Link to="/" className="navbar-logo" onClick={handleClick}>
             ARGSerwis
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i
               className={
                 click ? (
-                  <FontAwesomeIcon icon={faxmark} />
+                  <FontAwesomeIcon icon={faXmark} />
                 ) : (
                   <FontAwesomeIcon icon={faBars} />
                 )
@@ -84,6 +83,15 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 GALERIA
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/kontakt"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                KONTAKT
               </Link>
             </li>
           </ul>

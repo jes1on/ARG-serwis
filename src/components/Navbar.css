@@ -1,17 +1,19 @@
 .navbar {
     background: transparent;
-    height: 80px;
+    height: 15vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: gray;
+    z-index: 1000;
 }
 
 .navbar.active {
     background: #242222;
+    height: 5vh;
 }
 
 .navbar-container {
@@ -19,7 +21,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     width: 100%;
 }
 
@@ -37,13 +38,14 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 1%;
     list-style: none;
     text-align: center;
-    width: 60vw;
+    width: 65%;
     justify-content: end;
     margin-right: 2rem;
+    overflow: hidden;
 }
 
 .nav-item {
@@ -63,13 +65,10 @@
     color: darkgray;
   }
   
-  .fa-bars {
+  .faBars, .faXmark {
     color: #fff;
   }
 
-  .menu-icon {
-    display: none;
-  }
 
   @media screen and (max-width: 960px) {
     .NavbarItems {
