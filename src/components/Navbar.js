@@ -25,16 +25,16 @@ function Navbar() {
     <>
       <nav className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={handleClick}>
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             ARGSerwis
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i
               className={
                 click ? (
-                  <FontAwesomeIcon icon={faXmark} />
+                  <FontAwesomeIcon icon={faXmark} style={{ color: "#fff" }} />
                 ) : (
-                  <FontAwesomeIcon icon={faBars} />
+                  <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }}/>
                 )
               }
             />
