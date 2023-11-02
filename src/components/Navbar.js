@@ -7,6 +7,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 function Navbar() {
   const [click, setClick] = useState(false);
   const [navbar, setNavbar] = useState(false);
+  const [menuIcon, setMenuIcon] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -14,8 +15,10 @@ function Navbar() {
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNavbar(true);
+      setMenuIcon(true);
     } else {
       setNavbar(false);
+      setMenuIcon(false);
     }
   };
 
@@ -25,19 +28,11 @@ function Navbar() {
     <>
       <nav className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo" onClick={handleClick}>
             ARGSerwis
           </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i
-              className={
-                click ? (
-                  <FontAwesomeIcon icon={faXmark} style={{ color: "#fff" }} />
-                ) : (
-                  <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }}/>
-                )
-              }
-            />
+          <div className={menuIcon ? "menu-icon active" : "menu-icon"} onClick={handleClick}>
+            <FontAwesomeIcon icon={click ? faXmark : faBars} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">

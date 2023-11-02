@@ -39,8 +39,8 @@ export const Footer = () => {
         </Link>
       </div>
       <div className="footerCallContainer">
-        <h1>Zadzwoń do nas</h1>
-        32 307 44 34
+        <h2>Zadzwoń do nas</h2>
+        <p>32 307 44 34</p>
       </div>
     </div>
     <div className="sign">BL S.A.</div>

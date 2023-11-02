@@ -10,8 +10,9 @@
 .contentHome {
   display: flex;
   width: 75%;
-  height: 100%;
+  height: 95vh;
   align-items: center;
+  margin-top: 5vh;
   margin-left: 25%;
   background-color: #6c757d;
 }
@@ -20,7 +21,7 @@
   position: absolute;
   left: 0;
   width: 25%;
-  height: 100vh;
+  height: 95vh;
   background-image: url(./Porsche2.jpg);
   background-size: cover;
 }
