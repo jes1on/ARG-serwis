@@ -14,7 +14,7 @@ export const Footer = () => {
   <footer className="footerContainer">
     <div className="footerContent">
       <div className="footerLoc">
-        <h2>Lokalizacja</h2>
+        <h3>LOKALIZACJA</h3>
         <p>ul. Gliwicka 234</p>
         <p>40-860 Katowice</p>
       </div>
@@ -39,7 +39,7 @@ export const Footer = () => {
         </Link>
       </div>
       <div className="footerCallContainer">
-        <h2>Zadzwoń do nas</h2>
+        <h3>ZADZWOŃ DO NAS</h3>
         <p>32 307 44 34</p>
       </div>
     </div>

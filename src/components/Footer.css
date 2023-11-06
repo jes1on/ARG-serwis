@@ -1,5 +1,5 @@
 .footerContainer {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: white;
     background-color: #242222;
     scroll-snap-align: start;
@@ -16,16 +16,20 @@
     text-align: center;
 }
 
+.footerLoc h3{
+    letter-spacing: 2px;
+}
+
 .footerMenu {
     display: grid;
     grid-column: 1;
     grid-row: 2;
     align-self: auto;
     justify-self: auto;
-
     grid-template-columns: repeat(3, auto);
     grid-auto-rows: 2;
     padding: 0.1rem;
+    letter-spacing: 1px;
 }
 
 .footerLink {
@@ -41,6 +45,10 @@
     grid-row: 1/3;
     align-self: center;
     text-align: center;
+}
+
+.footerCallContainer h3 {
+    letter-spacing: 2px;
 }
 
 .footerLink {

@@ -59,6 +59,8 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
   }
 
   .nav-links:hover {
@@ -68,6 +70,12 @@
   .menu-icon {
     display: none;
   }
+
+  @media screen and (max-width: 1070px) {
+  .nav-links {
+    letter-spacing: 0px;
+  }
+}
 
   @media screen and (max-width: 960px) {
     .NavbarItems {
@@ -103,7 +111,9 @@
       .nav-links {
         padding: 1rem;
         width: 100%;
-        display: table;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 2px;
       }
     
       .nav-links:hover {

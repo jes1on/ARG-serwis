@@ -60,7 +60,7 @@ export const Gallery = () => {
       </div>
       <div className="galleryContainer">
         <div className="title">
-          <h1>Galeria</h1>
+          <h1>GALERIA</h1>
         </div>
         <div className="gallery">
           {data.map((item, index) => {
