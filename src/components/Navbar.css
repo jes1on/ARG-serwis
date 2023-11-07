@@ -8,7 +8,7 @@
     font-size: 1rem;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .navbar.active {
@@ -45,17 +45,18 @@
     text-align: center;
     width: 65%;
     justify-content: end;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .nav-item {
-    height: 15vh;
+    height: 5vh;
   }
 
 .nav-links {
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
@@ -107,6 +108,10 @@
         z-index: 0.5;
         
       }
+
+      .nav-item {
+        height: 16vh;
+      }
     
       .nav-links {
         padding: 1rem;
@@ -133,16 +138,17 @@
         position: absolute;
         top: 50%;
         right: 5%;
+        margin-right: 1rem;
         transform: translate(100%, -50%);
         font-size: 1.8rem;
         cursor: pointer;
-        margin-right: 1rem;
         z-index: 99;
       }
     
       .menu-icon.active {
         top: 50%;
         right: 5%;
+        margin-right: 1rem;
         z-index: 99;
       }
     
