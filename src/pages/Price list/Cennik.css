@@ -16,11 +16,13 @@
 .contentTitleCenter {
   width: 100%;
   display: inline-block;
-  margin-top: 1rem;
+  letter-spacing: 2px;
 }
 
 h1 {
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .viewport {
@@ -58,6 +60,11 @@ table {
 
 .priceTableBlockItem h2 {
   display: inline-flex;
+}
+
+h2 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
 }
 
 .priceTable {

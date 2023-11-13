@@ -19,13 +19,15 @@
 
 }
 
-h1 {
+.title h1 {
     display: flex;
     width: 100%;
     justify-content: center;
     margin: auto;
     padding: 2rem;
     color: #f8f9fa;
+    letter-spacing: 2px;
+    font-size: 2rem;
 }
 
 .gallery .pics {

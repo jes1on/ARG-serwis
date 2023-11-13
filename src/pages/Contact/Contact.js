@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faSquareFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {
   faPhone,
   faMapLocationDot,
@@ -34,7 +34,6 @@ export const Contact = () => {
               <h3>
                 <FontAwesomeIcon
                   icon={faMapLocationDot}
-                  style={{ color: "#f8f9fa" }}
                 />
               </h3>
               <h3>ADRES</h3>
@@ -45,7 +44,6 @@ export const Contact = () => {
               <h3>
                 <FontAwesomeIcon
                   icon={faDoorOpen}
-                  style={{ color: "#f8f9fa" }}
                 />
               </h3>
               <h3>GODZINY OTWARCIA</h3>
@@ -56,33 +54,30 @@ export const Contact = () => {
               <h3>
                 <FontAwesomeIcon
                   icon={faHashtag}
-                  style={{ color: "#f8f9fa" }}
                 />
               </h3>
               <h3>OBSERWUJ NAS!</h3>
               <div className="contactIcons">
                 <ul>
                   <li>
-                    <a
+                    <a className="facebook"
                       href="https://facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FontAwesomeIcon
-                        icon={faFacebook}
-                        style={{ color: "white" }}
+                        icon={faSquareFacebook}
                       />
                     </a>
                   </li>
                   <li>
-                    <a
+                    <a className="instagram"
                       href="https://instagram.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FontAwesomeIcon
                         icon={faInstagram}
-                        style={{ color: "white" }}
                       />
                     </a>
                   </li>

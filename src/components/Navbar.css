@@ -62,6 +62,7 @@
     height: 100%;
     font-size: 1.1rem;
     letter-spacing: 2px;
+    white-space: nowrap
   }
 
   .nav-links:hover {
