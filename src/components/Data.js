@@ -5,9 +5,9 @@ export const stageManagerContent = [
   {
     id: 0,
     src: image1,
-    title: "ARG", //0 Home
-    subTitle: "Text nr 1",
-    top: "Z pasji do motoryzacji, dbając o najmniejsze detale.",
+    title: "HOME", //0 Home
+    subTitle: "PROFESJONALNY WARSZTAT SAMOCHODOWY",
+    top: "Z PASJI DO MOTORYZACJI, DBAJĄC O NAJMNIEJSZE DETALE.",
     bottom: "Jesteśmy dla Państwa od 15 lat. Dziękujemy za zaufanie.",
   },
   {

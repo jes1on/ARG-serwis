@@ -2,27 +2,26 @@
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #242222;
-  z-index: 0;
+  background-color: #0f1112;
   scroll-snap-align: start;
 }
 
 .contentHome {
   display: flex;
   width: 75%;
-  height: 95vh;
+  /* height: 95vh; */
   align-items: center;
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
   margin-left: 25%;
-  background-color: #6c757d;
+  background-color: #babcbd;
 }
 
 .leftColumnHome {
   position: absolute;
   left: 0;
   width: 25%;
-  height: 95vh;
-  background-image: url(./Porsche2.jpg);
+  height: 100vh;
+  background-image: url(./gtr.jfif);
   background-size: cover;
 }
 
@@ -32,17 +31,18 @@
   padding: 1rem;
   width: 60%;
   height: 70%;
-  background-color: #6c757d;
+  color: #0f1112;
+  /* background-color: #6c757d; */
 
   overflow: hidden;
 }
 
 .p1 {
-  color: white;
+  color: #0f1112;
 }
 
 .p2 {
-  color: #dee2e6;
+  color: #0f1112
 }
 
 @media (max-width: 991px) {
@@ -51,7 +51,7 @@
   }
 
   .textHome h1 {
-    display: flex;
+    text-align: center;
     margin-left: -15%;
   }
 

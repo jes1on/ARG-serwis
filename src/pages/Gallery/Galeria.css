@@ -1,12 +1,20 @@
 .galleryContainer {
+    display: flex;
     width: 100%;
-    z-index: 1;
+    min-height: 100vh;
     scroll-snap-type: none;
     scroll-snap-align: start;
     scroll-behavior: smooth;
-    background-color: #242222;
-    padding: 1rem;
+    background-color: #babcbd;
+    /* padding: 1rem; */
 }
+
+.contentGallery {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 5vh;
+  
+  }
 
 .gallery {
     -webkit-column-count: 3;
@@ -20,14 +28,9 @@
 }
 
 .title h1 {
-    display: flex;
     width: 100%;
-    justify-content: center;
-    margin: auto;
-    padding: 2rem;
-    color: #f8f9fa;
+    display: inline-block;
     letter-spacing: 2px;
-    font-size: 2rem;
 }
 
 .gallery .pics {
@@ -52,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: #0f1112;
     transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.5s ease-in-out;
     visibility: hidden;
     opacity: 0;
@@ -87,7 +90,7 @@
     margin-top: 1rem;
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.4);
-    color: #ffffff;
+    color: #eeeded;
     cursor: pointer;
     z-index: 100;
 }

@@ -59,6 +59,7 @@ export const Gallery = () => {
         <FontAwesomeIcon icon={faXmark} onClick={() => setModel(false)} />
       </div>
       <div className="galleryContainer">
+      <section className="contentGallery">
         <div className="title">
           <h1>GALERIA</h1>
         </div>
@@ -75,6 +76,7 @@ export const Gallery = () => {
             );
           })}
         </div>
+      </section>
       </div>
     </>
   );

@@ -23,7 +23,7 @@ export const Main = ({ data }) => {
         <div className="icons">
           <ul>
             <li>
-              <a
+              <a className="facebook"
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -32,7 +32,7 @@ export const Main = ({ data }) => {
               </a>
             </li>
             <li>
-              <a
+              <a className="instagram"
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"

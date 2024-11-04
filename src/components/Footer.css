@@ -1,8 +1,9 @@
 .footerContainer {
     font-size: 1.1rem;
-    color: white;
-    background-color: #242222;
+    color: #eeeded;
+    background-color: #0f1112;
     scroll-snap-align: start;
+    width: 100%;
 }
 
 .footerContent {
